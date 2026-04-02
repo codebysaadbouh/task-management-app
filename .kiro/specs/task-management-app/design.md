@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-L'application est une Progressive Web App (PWA) de gestion de tâches de style Kanban, construite en Next.js 15 avec l'App Router. Elle adopte une architecture fullstack : les Server Actions et les Route Handlers Next.js servent d'API, Drizzle ORM gère la persistance MySQL, et MinIO stocke les pièces jointes. L'authentification est assurée par NextAuth.js v5 / Auth.js (email/password + Google OAuth). L'interface est construite avec ShadCN/UI (Tailwind CSS v4) et le glisser-déposer est géré par `@dnd-kit`. L'infrastructure locale repose sur Docker Compose.
+L'application est une Progressive Web App (PWA) de gestion de tâches de style Kanban, construite en Next.js 16 avec l'App Router. Elle adopte une architecture fullstack : les Server Actions et les Route Handlers Next.js servent d'API, Drizzle ORM gère la persistance MySQL, et MinIO stocke les pièces jointes. L'authentification est assurée par NextAuth.js v5 / Auth.js (email/password + Google OAuth). L'interface est construite avec ShadCN/UI (Tailwind CSS v4) et le glisser-déposer est géré par `@dnd-kit`. L'infrastructure locale repose sur Docker Compose.
 
 ---
 
@@ -12,7 +12,7 @@ L'application est une Progressive Web App (PWA) de gestion de tâches de style K
 
 | Package | Version | Rôle |
 |---|---|---|
-| `next` | `^15.4.6` | Framework fullstack React (App Router, Server Actions) |
+| `next` | `^16.2.2` | Framework fullstack React (App Router, Server Actions) |
 | `react` | `^19.2.4` | Bibliothèque UI |
 | `react-dom` | `^19.2.4` | Rendu DOM React |
 | `next-auth` | `^5.0.0-beta.29` | Authentification (email + Google OAuth) |
@@ -41,7 +41,7 @@ L'application est une Progressive Web App (PWA) de gestion de tâches de style K
 ### Commande d'installation
 
 ```bash
-npm install next@^15.4.6 react@^19.2.4 react-dom@^19.2.4 next-auth@beta \
+npm install next@^16.2.2 react@^19.2.4 react-dom@^19.2.4 next-auth@beta \
   @auth/drizzle-adapter drizzle-orm mysql2 minio \
   @dnd-kit/core @dnd-kit/sortable zod bcryptjs
 
